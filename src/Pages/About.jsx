@@ -218,7 +218,7 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              Saya sangat tertarik dan berminat di bidang visual dan pengalaman pengguna (UI/UX). Fokus saya adalah menciptakan desain antarmuka yang tidak hanya indah secara estetika, tetapi juga fungsional dan mudah digunakan oleh pengguna.
+              Saya sangat tertarik dan berminat di bidang pengembangan web frontend. Fokus saya adalah menerjemahkan desain menjadi antarmuka web yang interaktif, responsif, dan memberikan pengalaman pengguna yang mulus dan modern.
             </p>
 
             {/* Quote Section */}

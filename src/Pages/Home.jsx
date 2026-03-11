@@ -24,14 +24,14 @@ const MainTitle = memo(() => (
       <span className="relative inline-block">
         <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
         <span className="relative bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent">
-          UI/UX
+          Frontend
         </span>
       </span>
       <br />
       <span className="relative inline-block mt-2">
         <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
         <span className="relative bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent">
-          Designer
+          Developer
         </span>
       </span>
     </h1>
@@ -76,8 +76,8 @@ const SocialLink = memo(({ icon: Icon, link, label }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["UI/UX Designer", "Digital Creative"];
-const TECH_STACK = ["Figma", "Adobe Illustrator", "Photoshop", "Capcut", "Canva"];
+const WORDS = ["Frontend Developer", "Web Developer"];
+const TECH_STACK = ["React", "JavaScript", "Tailwind CSS", "Node.js", "Git"];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/gavstoria", label: "GitHub Profile" },
   { icon: Linkedin, link: "https://www.linkedin.com/in/yoga-pangestu-99a5443b6", label: "LinkedIn Profile" },
@@ -140,12 +140,12 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Yoga Pangestu — UI/UX Designer</title>
-        <meta name="description" content="Website portofolio Yoga Pangestu, UI/UX Designer. Saya berfokus pada desain antarmuka yang menarik dan pengalaman pengguna terbaik." />
+        <title>Yoga Pangestu — Frontend Developer</title>
+        <meta name="description" content="Website portofolio Yoga Pangestu, Frontend Developer. Saya berfokus pada pengembangan antarmuka web yang interaktif dan responsif." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://yogapangestu.com" />
-        <meta property="og:title" content="Yoga Pangestu — UI/UX Designer" />
-        <meta property="og:description" content="Website portofolio Yoga Pangestu, UI/UX Designer." />
+        <meta property="og:title" content="Yoga Pangestu — Frontend Developer" />
+        <meta property="og:description" content="Website portofolio Yoga Pangestu, Frontend Developer." />
         <meta property="og:url" content="https://yogapangestu.com" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{`
@@ -153,7 +153,7 @@ const Home = () => {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Yoga Pangestu",
-            "jobTitle": "UI/UX Designer",
+            "jobTitle": "Frontend Developer",
             "url": "https://yogapangestu.com",
             "sameAs": [
               "https://github.com/gavstoria",

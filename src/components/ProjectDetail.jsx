@@ -167,7 +167,7 @@ const ProjectDetails = () => {
           content={
             project.description
               ? project.description.slice(0, 155)
-              : `Project ${project.title} oleh Yoga Pangestu — UI/UX Designer.`
+              : `Project ${project.title} oleh Yoga Pangestu — Frontend Developer.`
           }
         />
         <meta name="robots" content="index, follow" />
