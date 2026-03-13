@@ -218,7 +218,7 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              Saya sangat tertarik dan berminat di bidang pengembangan web frontend. Fokus saya adalah menerjemahkan desain menjadi antarmuka web yang interaktif, responsif, dan memberikan pengalaman pengguna yang mulus dan modern.
+              Sebagai seorang Frontend Developer dengan latar belakang UI/UX, saya tidak hanya menata kode, melainkan merancang pengalaman. Fokus saya adalah menjembatani jarak antara estetika visual dan keunggulan teknis—memastikan setiap antarmuka yang saya bangun tidak hanya interaktif dan responsif, tetapi juga fungsional dan intuitif bagi pengguna.
             </p>
 
             {/* Quote Section */}
@@ -244,7 +244,7 @@ const AboutPage = () => {
             </div>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
-              <a href="https://drive.google.com/drive/folders/1BOm51Grsabb3zj6Xk27K-iRwI1zITcpo" className="w-full lg:w-auto">
+              <a href="https://drive.google.com/file/d/1OezFx_bEp5WY5HZ-NKy-gXtNUlvms7LX/view?usp=sharing" className="w-full lg:w-auto">
                 <button
                   data-aos="fade-up"
                   data-aos-duration="800"

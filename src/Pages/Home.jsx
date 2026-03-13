@@ -38,8 +38,9 @@ const MainTitle = memo(() => (
   </div>
 ));
 
-const TechStack = memo(({ tech }) => (
-  <div className="px-4 py-2 hidden sm:block rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-sm text-gray-300 hover:bg-white/10 transition-colors">
+const TechStack = memo(({ tech, icon }) => (
+  <div className="px-4 py-2 hidden sm:flex items-center gap-2 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-sm text-gray-300 hover:bg-white/10 transition-colors">
+    <img src={icon} alt={tech} className="w-4 h-4 object-contain" />
     {tech}
   </div>
 ));
@@ -76,8 +77,16 @@ const SocialLink = memo(({ icon: Icon, link, label }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Frontend Developer", "Web Developer"];
-const TECH_STACK = ["React", "JavaScript", "Tailwind CSS", "Node.js", "Git"];
+const WORDS = ["Frontend Developer", "UI/UX Designer", "Creative Developer"];
+const TECH_STACK = [
+  { tech: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { tech: "Tailwind", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
+  { tech: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { tech: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+  { tech: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+  { tech: "Photoshop", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" },
+  { tech: "Illustrator", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" },
+];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/gavstoria", label: "GitHub Profile" },
   { icon: Linkedin, link: "https://www.linkedin.com/in/yoga-pangestu-99a5443b6", label: "LinkedIn Profile" },
@@ -140,12 +149,12 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Yoga Pangestu — Frontend Developer</title>
-        <meta name="description" content="Website portofolio Yoga Pangestu, Frontend Developer. Saya berfokus pada pengembangan antarmuka web yang interaktif dan responsif." />
+        <title>Yoga Pangestu — Frontend Developer & UI/UX Designer</title>
+        <meta name="description" content="Website portofolio Yoga Pangestu. Saya adalah seorang Frontend Developer dengan keahlian UI/UX, berfokus pada pengembangan antarmuka web yang interaktif, indah, dan responsif." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://yogapangestu.com" />
-        <meta property="og:title" content="Yoga Pangestu — Frontend Developer" />
-        <meta property="og:description" content="Website portofolio Yoga Pangestu, Frontend Developer." />
+        <meta property="og:title" content="Yoga Pangestu — Frontend Developer & UI/UX Designer" />
+        <meta property="og:description" content="Website portofolio Yoga Pangestu, memadukan sisi teknis Frontend dan estetika UI/UX." />
         <meta property="og:url" content="https://yogapangestu.com" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{`
@@ -153,7 +162,7 @@ const Home = () => {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Yoga Pangestu",
-            "jobTitle": "Frontend Developer",
+            "jobTitle": "Frontend Developer & UI/UX Designer",
             "url": "https://yogapangestu.com",
             "sameAs": [
               "https://github.com/gavstoria",
@@ -193,8 +202,8 @@ const Home = () => {
 
                   {/* Tech Stack */}
                   <div className="flex flex-wrap gap-3 justify-start" data-aos="fade-up" data-aos-delay="1200">
-                    {TECH_STACK.map((tech, index) => (
-                      <TechStack key={index} tech={tech} />
+                    {TECH_STACK.map((item, index) => (
+                      <TechStack key={index} tech={item.tech} icon={item.icon} />
                     ))}
                   </div>
 
